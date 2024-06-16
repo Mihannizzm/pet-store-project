@@ -1,10 +1,9 @@
 package dto;
 
-import enums.Status;
-import lombok.*;
-import org.apache.commons.lang3.RandomUtils;
-
-import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor

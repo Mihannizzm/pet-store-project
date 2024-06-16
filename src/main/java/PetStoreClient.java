@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 
 public class PetStoreClient {
 
-    private static RequestSpecification requestSpec = new RequestSpecBuilder()
+    private static final RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri("https://petstore.swagger.io/v2/store")
             .setContentType(ContentType.JSON)
             .log(LogDetail.METHOD)
@@ -20,7 +20,7 @@ public class PetStoreClient {
             .log(LogDetail.BODY)
             .build();
 
-    private static ResponseSpecification responseSpec = new ResponseSpecBuilder()
+    private static final ResponseSpecification responseSpec = new ResponseSpecBuilder()
             .log(LogDetail.BODY)
             .build();
 
